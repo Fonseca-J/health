@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Contêiner flex para alinhar imagem e coração */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+/* Estilizando a imagem e o texto IMC/Status */
+.infoIMC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Lado esquerdo */
+}
+
+.infoIMC img {
+    width: 150px; /* Ajuste conforme necessário */
+    margin-bottom: 10px;
+}
+
+.infoIMC h2, .infoIMC h3 {
+    margin: 5px 0;
+}
+
+/* Coração pulsando */
+.coracao {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(-135deg);
+    animation: pulsar 0.7s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 50%; /* Lado direito */
+}
+
+.quadrado, .circulo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #ff0000;
+}
+
+.circulo {
+    border-radius: 50px;
+}
+
+.top {
+    top: 50%;
+}
+
+.left {
+    left: 50%;
+}
+
+/* Estilização do texto FMC dentro do coração */
+#fmc-text {
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    z-index: 1;
+    transform: rotate(135deg); /* Para o texto aparecer corretamente */
+}
+
+/* Função CSS para ampliar e reduzir o coração */
+@keyframes pulsar {
+    0% {
+        transform: scale(0.95) rotate(-135deg);
+    }
+    
+    100% {
+        transform: scale(1.15) rotate(-135deg);
+    }
+}
