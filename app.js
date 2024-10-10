@@ -3,7 +3,7 @@
  * Calculadora de métricas de saúde
  * @author Joao Fonseca
  * @version 1.0
- * @link https://github.com/andrewdantas/health.git
+ * @link https://github.com/Fonseca-J/health.git
  */
 
 // Variáveis
@@ -86,9 +86,9 @@ function calcular() {
 
     function limpar() {
         document.getElementById('imc').innerHTML = "IMC"
-        document.getElementById('status').innerHTML = "Status"
-        document.getElementById('fcm-text').innerHTML = "FCM"
-        document.getElementById('calorias').innerHTML = "Calorias/dia"
-        document.getElementById('agua').innerHTML = "Litros/dia"
+        document.getElementById('status').innerHTML = "status"
+        document.getElementById('freq').innerHTML = "FCM"
+        document.getElementById('calorias').innerHTML = "calorias/dia"
+        document.getElementById('agua').innerHTML = "litros/dia"
         document.getElementById('grafico').src = "img/reset.png"
     }
