@@ -56,7 +56,8 @@ h1 {
     transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
 
-.infoIMC h2, .infoIMC h3 {
+.infoIMC h2,
+.infoIMC h3 {
     margin: 10px 0;
     color: #333; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
@@ -88,7 +89,8 @@ h1 {
     width: 50%; /* Lado direito */
 }
 
-.quadrado, .circulo {
+.quadrado,
+.circulo {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -125,7 +127,6 @@ input[type="reset"] {
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 #f {
@@ -141,17 +142,18 @@ hr {
     0% {
         transform: scale(0.95) rotate(-135deg);
     }
-    
+
     100% {
         transform: scale(1.15) rotate(-135deg);
     }
 }
 
 /* Media query para dispositivos móveis */
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
     body {
         font-size: 0.9rem; /* Ajuste do tamanho da fonte */
     }
+}
 
     .info-container {
         flex-direction: column; /* Altera a direção para coluna em telas pequenas */
@@ -160,60 +162,5 @@ hr {
     }
 
     .infoIMC {
-        width: 100%; /* Altera a largura para ocupar 100% do espaço em tela pequena */
-    }
-    
-    #fcm-text {
-        font-size: 1rem; /* Reduz o tamanho da fonte do texto */
-    }
+        width: 100%;
 }
-
-/* Estilo geral para inputs e botões */
-input[type="number"],
-input[type="text"],
-select {
-    width: calc(100% - 20px); /* Para ajustar o espaçamento */
-    padding: 10px; /* Espaçamento interno */
-    border: 2px solid #ccc; /* Borda cinza */
-    border-radius: 10px; /* Bordas arredondadas */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
-    margin-bottom: 15px; /* Espaçamento entre os campos */
-}
-
-/* Efeito de foco nos campos de entrada */
-input[type="number"]:focus,
-input[type="text"]:focus,
-select:focus {
-    border-color: #007BFF; /* Cor da borda ao focar */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
-    outline: none; /* Remove contorno padrão */
-}
-
-/* Estilizando os botões */
-input[type="button"],
-input[type="reset"] {
-    background-color: #007BFF; /* Cor de fundo azul */
-    color: white; /* Cor do texto */
-    border: none; /* Remove borda padrão */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
-}
-
-/* Efeito de hover nos botões */
-input[type="button"]:hover,
-input[type="reset"]:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura */
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
-}
-
-/* Estilizando os botões de rádio */
-.Radio {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; /* Espaçamento inferior */
-}
-
