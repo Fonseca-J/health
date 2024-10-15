@@ -9,6 +9,7 @@ body {
     font-size: 1rem; /* Usando rem para consistência */
     text-align: center;
     overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: hidden; /* Impede rolagem vertical */
     background-color: #f0f4f8; /* Fundo suave */
 }
 
@@ -125,7 +126,6 @@ input[type="reset"] {
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 #f {
@@ -216,4 +216,3 @@ input[type="reset"]:hover {
     justify-content: center;
     margin-bottom: 15px; /* Espaçamento inferior */
 }
-
